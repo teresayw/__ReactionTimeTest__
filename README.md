@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Reaction Time Test
 
-# Run and deploy your AI Studio app
+簡單的反應力測試遊戲，點擊畫面或按下空白鍵開始，等待變綠後立即點擊。
 
-This contains everything you need to run your app locally.
+## 本地運行
 
-View your app in AI Studio: https://ai.studio/apps/2613c737-85f2-427a-bbbe-e402b39e6699
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
+1. 安裝相依套件：
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. 啟動開發伺服器：
    `npm run dev`
+3. 建置專案：
+   `npm run build`
+
+## GitHub Pages 部署
+
+當你推送到 `main` 分支時，GitHub Actions 會自動將 `dist/` 輸出部署到 `gh-pages` 分支。網站網址將會是：
+
+`https://teresayw.github.io/__ReactionTimeTest__/`
